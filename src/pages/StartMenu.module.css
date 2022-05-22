@@ -1,14 +1,16 @@
-
-.header {
+.backdrop {
     background-image: -webkit-linear-gradient(45deg, #625e50 0%, #a48362 42%, #ffe0a7 100%);
     background-image: -moz-linear-gradient(45deg, #625e50 0%, #a48362 42%, #ffe0a7 100%);
     background-image: -o-linear-gradient(45deg, #625e50 0%, #a48362 42%, #ffe0a7 100%);
     background-image: linear-gradient(45deg, #625e50 0%, #a48362 42%, #ffe0a7 100%);
     min-height: 100vh;
-    display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
+}
+
+.header {
+    display: flex;
+    /* flex-direction: column; */
     font-size: calc(10px + 2vmin);
     color: white;
 }
@@ -18,7 +20,6 @@ button {
     font-size: 30px;
     font-weight: 600;
     margin: 10px;
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
     height: 20vh;
     width: 10ch;
     background-color: rgb(255, 255, 255);
@@ -27,7 +28,26 @@ button {
     color: rgb(133, 133, 133);
 }
 
-.button:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
+button:disabled {
+    color: rgba(133, 133, 133, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.canvasHolder {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonHolder {
+    display: flex;
+    flex-direction: row;
+}
+
+.topDownFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgDisplay{
+    height: 30vh;
 }

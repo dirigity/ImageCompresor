@@ -1,11 +1,10 @@
-import { invoke } from '@tauri-apps/api';
 import type { Component } from 'solid-js';
 
 import styles from './StartMenu.module.css';
 
 const StartMenu: Component = () => {
   return (
-    <header class={styles.header}>
+    <header class={[styles.backdrop, styles.header].join(" ")}>
       <button onclick={
         () => {
           window.location.href = "./decode"
